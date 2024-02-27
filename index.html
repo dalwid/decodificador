@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="./assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/componets.css">
+</head>
+<body>
+    <header class="logo">
+        <p class="cabecalho__logo__texto">a</p>
+    </header>
+
+    <main class="decodificador">
+        <section class="decodificador__principal">
+            <h1 class="decodificador__titulo">Digite seu texto</h1>
+            <textarea class="decodificador__principal__texto" name="decodificador" id="entradaTexto"></textarea>
+
+            <div class="codificador__botoes">
+                <p class="decodificador__texto__atencao"><span class="decodificador__atencao">!</span>Apenas letras minúsculas e sem acento.</p>
+                <button  class="botao botao-primario"   type="submit" onclick="criptografia()">Criptografar</button>
+                <button  class="botao botao-secundario" type="submit" onclick="descriptografar()">Descriptografar</button>
+            </div>
+
+        </section>
+
+        <aside class="decodificador__alternativo" id="decodificador__alternativo">
+            <figure class="decodificador__alternativo__imagem" id="img">
+                <img class="decodificador_alternativo__imagemConfig" src="./assets/img/challenger.png" alt="pessoa verificando um diamanete">
+                <figcaption class="decodificador__alternativo__imagemDescricao" >Pessoa ajuelhada vendo um diamante com lupa com o intuido de entender</figcaption>
+            </figure>
+            <h2 class="decodificador__alternativo__titulo" id="textArea-Decodificador">Nenhuma mensagem encontrada</h2>
+            <p class="decodificador__alternativo__titulo__paragrafo" id="paragrafo-ultimo-texto">Digite um texto que você deseja criptografar ou descriptografar.</p>            
+            <textarea class="decodificador__alternativo__texto" name="saidaTexto" id="textoResultante" cols="30" rows="10" readonly></textarea>
+            <div class="decodificador__grupo__botao" id="botaoCopiar"></div>
+        </aside>
+    </main>
+
+    <footer class="credenciais">
+        <p class="credenciais__titulo">Desenvolvido Por David</p>
+        <section class="credenciais__redes__sociais">
+            <a class="credenciais__redes__link" href="https://www.instagram.com/avrahambenavrahamperetz/"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+            <a class="credenciais__redes__link" href="https://www.linkedin.com/in/david-teixeira-pereira-ferreira-5a034348/"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+            <a class="credenciais__redes__link" href="https://github.com/dalwid"><i class="fa-brands fa-github fa-2xl"></i></a>
+            <a class="credenciais__redes__link" href="https://www.facebook.com/AvrahamBenAvrahamPeretz"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+        </section>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/0a7cdd52b8.js" crossorigin="anonymous"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+</html>

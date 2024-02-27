@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Sacramento&family=Yeseva+One&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --cor-primaria: #FFF;
+    --cor-secundaria: #0A3871;
+    --cor-fundo: #E5E5E5;
+    --cor-padrao: #000;
+    --cor-extra: #aaaeb3;
+    --cor-ultimo-texto: #495057;
+
+    --texto-logo: "Montserrat", sans-serif;
+    --titulo-caixa-de-criptografia: "Inter", sans-serif;
+
+    --just-font-name-author:   'Great Vibes', cursive;
+    --main-paragraph:          'Sacramento', cursive;
+    --essential-fonts-default: 'Yeseva One', serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+}
+
+.logo{
+    width: 120px;
+    height: 48px;
+    margin-top: -3.5%;
+}
+    .cabecalho__logo__texto{
+        padding: 44px;
+        font-family: var(--texto-logo);
+        font-weight: 600;
+        font-size: 9.09rem;
+        color: var(--cor-secundaria);
+        text-shadow: -10px 15px 5px #aaa;
+    }
+
+
+.decodificador{
+	display: flex;    
+	justify-content: center;
+    align-items: center;
+    align-self: self-start;
+    margin-bottom: 72px;
+    /* padding-top: -7%; */
+    gap: 248px;
+}
+    .decodificador__principal{
+        display: flex;
+        flex-direction: column;
+        align-items: normal;
+        width: 680px;
+        height: 950px;
+    }
+        .decodificador__titulo{
+            font-family: var(--titulo-caixa-de-criptografia);
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 48px;
+            color: var(--cor-secundaria);
+            text-shadow: 3.5px 5.9px 2px #aaa;
+            width: 680px;
+            height: 48px;
+            margin-top: 168px;
+            margin-bottom: 5%;
+        }
+        .decodificador__principal__texto{
+            border: none;
+            height: 580px;
+            width: 680px;
+            background-color: var(--cor-fundo);
+            color: var(--cor-secundaria);            
+            border: none;
+            cursor: pointer;
+
+            font-family: var(--titulo-caixa-de-criptografia);
+            font-weight: 400;
+            font-size: 2rem;
+            line-height: 48px;
+        }
+
+        .codificador__botoes{
+            width: 680px;
+            height: 67px;
+            gap: 24px;
+            margin-bottom: 172px;
+        }
+            .decodificador__texto__atencao{
+                font-family: var(--titulo-caixa-de-criptografia);
+                font-size: 1rem;
+                line-height: 18px;
+                width: 358px; 
+                margin: 5px;
+                display: flex;
+                align-items: baseline;
+                gap: 1.5%;
+                           
+            }
+            .decodificador__atencao{
+                border: 1px solid var(--cor-extra);
+                background-color: var(--cor-extra);
+                border-radius: 50%;
+                padding: 0.7% 2.7%;
+                font-size: 1rem;
+            }
+    
+
+    .decodificador__alternativo{
+        border-radius: 2%;
+        width: 400px;
+        height: 844px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-end;
+        background-color: var(--cor-primaria);
+        box-shadow: -25px 25px 5px 2px #888888;
+        gap: 10px;
+        margin-top: -2%;
+        
+    }
+    .centralizar-conteudo-decodificador{   
+        position: relative;
+        top: -10%;
+    }
+        /* .decodificador__alternativo__imagem{
+        } */
+        .decodificador_alternativo__imagemConfig{
+            align-self: flex-start;
+            width: 336px;
+            height: 304px;
+        }
+            .decodificador__alternativo__imagemDescricao{ display: none;}
+
+        .decodificador__alternativo__titulo, .decodificador__alternativo__titulo--posicao{            
+            font-family: var(--essential-fonts-default);
+            text-align: center;
+            font-size: 1.5rem;
+            line-height: 28.8px;
+        }
+            .decodificador__alternativo__titulo--posicao{
+                position: relative;
+                top: -10.5%;
+            }
+
+        .decodificador__alternativo__titulo__paragrafo, .decodificador__alternativo__titulo__paragrafo--posicao{
+            font-family: var(--titulo-caixa-de-criptografia);
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 24px;
+            text-align: center;
+
+            color: var(--cor-ultimo-texto);    
+        }
+            .decodificador__alternativo__titulo__paragrafo--posicao{
+                position: relative;
+                top: -10.8%;
+            }
+
+        .decodificador__alternativo__texto, .decodificador__alternativo__ajustando_posicao, .decodificador__alternativo__texto--cel{            
+            height: 300px;
+            width: 385px;
+            background-color: var(--cor-primaria);
+            color: var(--cor-ultimo-texto);
+
+            font-family: var(--titulo-caixa-de-criptografia);
+            font-weight: 400;
+            font-size: 1.5rem;
+            line-height: 36px;
+        }
+        .decodificador__alternativo__ajustando_posicao{
+           border: none;
+           position: relative;
+           top: -36%;           
+        }
+
+        .decodificador__grupo__botao{
+            display: flex;
+            justify-content: space-between;
+            gap: 24px;
+            padding: 20px;
+        }
+        
+
+.credenciais{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+    font-family: var(--titulo-caixa-de-criptografia);
+    font-weight: 400;
+    font-size: 1.5rem;
+    padding: 60px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+}
+
+    .credenciais__titulo{
+        font-family: var(--just-font-name-author);
+        font-size: 5rem;
+        font-weight: 500;
+        align-self: center;
+        padding: 15px;
+        text-shadow: 3.5px 5.9px 2px #000;
+    }
+
+    .credenciais__redes__sociais{
+        display: flex;
+        gap: 35px;
+        align-self: center;
+        padding:25px;
+        box-shadow: -15px 25px 18px -15px #000;
+        border-bottom: 2px solid #000;
+        border-bottom-right-radius: 25px;
+        border-top-left-radius: 25px;
+    }
+        .credenciais__redes__link{
+            text-decoration: none;
+            color: var(--cor-primaria);                 
+        }
+
+        
+/*================================ TABLET ================================*/
+
+@media (max-width: 768px){
+    .decodificador{
+        flex-direction: column;
+        gap: 40px;
+        margin-bottom: 5%;;
+        justify-content: flex-start;
+    }
+
+    .decodificador__alternativo{
+        height: 292px;
+        width: 688px;
+        padding: 12px;
+        gap: 32px;
+        margin-top: -20%;
+        align-items: center;
+    }   
+
+    .decodificador_alternativo__imagemConfig{
+        display: none;
+    }
+
+    .decodificador__alternativo__titulo--posicao{
+        position: relative;
+        top: -7%;
+    }
+    .decodificador__alternativo__titulo__paragrafo--posicao{
+        position: relative;
+        top: -6%;
+    }
+
+    .decodificador__alternativo__ajustando_posicao{
+        position: relative;
+        top: 2%;
+        height: 170px;
+        width: 650px;gap: 32px;
+    }
+
+    .credenciais{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+    .credenciais__redes__sociais{
+        display: flex;
+        flex-direction: column;
+    }
+
+        .credenciais__titulo{
+            font-size: 3.9rem;
+        }
+}
+
+
+/*================================ CELL ================================*/
+
+@media (max-width:480px){
+
+    .cabecalho__logo__texto{
+        font-size: 8rem;
+        margin-top: -15%;
+    }
+
+    .decodificador__titulo{        
+        position: relative;
+        left: 20%;
+    }
+
+   .decodificador__principal__texto{
+        align-self: center;
+        width: 450px;
+   }
+   
+   .decodificador__texto__atencao{
+        position: relative;
+        left:17%;
+        margin: 2%;
+   }
+   
+   .decodificador__alternativo{
+        height: 300px;
+        width: 430px;
+        margin-top: -10%;
+        margin-bottom: 10%;
+        border-radius: 10%;
+   }
+   .decodificador__alternativo__titulo--posicao{
+        position: relative;
+        top: 2%;
+    }
+
+    .decodificador__alternativo__titulo__paragrafo--posicao{
+        position: relative;
+        top: -3%;
+    }
+ 
+    .credenciais{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .credenciais__redes__sociais{
+        display: flex;
+        flex-direction: row;
+    }
+        .credenciais__titulo{
+            font-size: 2rem;
+        }
+}
+
+.decodificador__alternativo--tela__cel{    
+    position: relative;
+    right: -0.5%;
+}
+
+.decodificador__alternativo__texto--cel{
+    border: none;
+    width: 435px;
+    margin: 0 0 0 10px;
+    margin-bottom: 5%;
+    height: 580px;
+    text-align: justify;
+}

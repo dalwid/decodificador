@@ -1,0 +1,58 @@
+:root{
+    --cor-primaria: #FFF;
+    --cor-secundaria: #0A3871;
+    --cor-fundo: #E5E5E5;
+    --cor-padrao: #000;
+    
+    --cor-botao-texto-primaria: #D8DFE8;
+    
+    --texto-botoes: "Inter", sans-serif;
+}
+
+.botao{    
+    width: 328px;
+    height: 67px;
+    border: 1px solid var(--cor-secundaria);
+    border-radius: 24px;
+    gap: 8px;
+
+    font-family: var(--texto-botoes);
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.21rem;
+    text-align: center;
+    color: var(--cor-secundaria);
+    background-color: var(--cor-primaria);
+}
+
+.botao-primario{
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
+}
+
+.botao-secundario{
+    background-color: var(--cor-botao-texto-primaria);
+    color: var(--cor-secundaria);
+}
+
+.botao-reposicao{
+    position: relative;
+    top: -7%;
+}
+
+@media (max-width:480px){
+    .botao{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 5px;
+        width: 450px;
+    }
+
+    .botao-primario, .botao-secundario{
+        position: relative;
+        left: 15%;
+        margin: 2%;
+    }
+}
